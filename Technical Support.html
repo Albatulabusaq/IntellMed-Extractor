@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Support</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .background-container {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      display: flex;
+      overflow: hidden;
+    }
+    .background-img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f2f5a',
+            secondary: '#d9f0f7',
+            light: '#f5fcff',
+            dark: '#0c2645',
+            accent: '#7ea6d9'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="min-h-screen bg-secondary relative flex items-center justify-center p-6 overflow-hidden">
+    
+    <!-- Background Image Layer -->
+    <div class="background-container">
+
+      <img src="C:\Users\btool\Downloads\img_group_29.png" alt="Background" class="background-img">
+    </div>
+    
+    <!-- Logo -->
+    <div class="absolute top-8 left-8 z-20">
+      <a href="C:\Users\btool\Downloads\grad_s_application13\Home1.html">
+        <img src="C:\Users\btool\Downloads\img_header_logo.png" class="w-32 h-auto cursor-pointer">
+      </a>
+    </div>
+    
+    <!-- Chat Icon -->
+    <div class="absolute top-8 right-8 z-20">
+      <img src="C:\Users\btool\Downloads\Capture2 (1).png" alt="Chat Icon" class="w-10 h-10 cursor-pointer">
+    </div>
+    
+    <!-- Form Container -->
+    <form autocomplete="off" class="bg-light rounded-3xl shadow-[10px_10px_15px_rgba(0,0,0,0.1)] p-8 max-w-md w-full relative z-10" novalidate>
+      
+      <!-- Headset Icon -->
+      <div class="flex justify-center mb-4">
+        <img src="C:\Users\btool\Downloads\Capture (1).png" alt="Headset Icon" class="w-14 h-14">
+      </div>
+      
+      <!-- Title -->
+      <h1 class="text-primary font-extrabold text-2xl text-center mb-6">
+        Technical Support
+      </h1>
+      
+      <!-- User ID Input -->
+      <div class="mb-4">
+        <input 
+          class="w-full border border-primary rounded-md py-2 px-3 text-primary placeholder-primary focus:outline-none focus:ring-2 focus:ring-primary" 
+          placeholder="User ID" 
+          type="text"
+          required
+        >
+      </div>
+      
+      <!-- Subject Input -->
+      <div class="mb-4">
+        <input 
+          class="w-full border border-primary rounded-md py-2 px-3 text-primary placeholder-primary focus:outline-none focus:ring-2 focus:ring-primary" 
+          placeholder="Subject" 
+          type="text"
+          required
+        >
+      </div>
+      
+      <!-- Problem Description -->
+      <div class="mb-6">
+        <textarea 
+          class="w-full border border-primary rounded-md py-2 px-3 text-primary placeholder-primary resize-none focus:outline-none focus:ring-2 focus:ring-primary" 
+          placeholder="Problem Description" 
+          rows="5"
+          required
+        ></textarea>
+      </div>
+      
+      <!-- Submit Button -->
+      <button 
+        class="bg-primary text-white font-extrabold text-lg rounded-full py-2 px-14 mx-auto block hover:bg-dark transition-colors" 
+        type="submit"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</body>
+</html>
