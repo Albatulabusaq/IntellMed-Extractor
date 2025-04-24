@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up - Create Your Account Today</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Join us by creating an account. Start by entering your user ID, email, and password. Sign up now and enjoy the benefits of being part of our community."
+    />
+    <img
+      alt="Logo"
+      src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
+      style="width: 0px; height: 0px; display: none"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script>
+      /**
+       * Handles the value change functionality in a country picker
+       */
+      function handleFloatingLabel(/** @type {HTMLElement} */ target) {
+        const input = target.querySelector("[floating-input]");
+        const label = target.querySelector("[floating-text]");
+
+        let timer /** @type {NodeJS.Timeout} */;
+        let requestId /** @type {number} */;
+
+        function fixOffset() {
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(() => {
+            if (requestId) cancelAnimationFrame(requestId);
+            requestId = requestAnimationFrame(() => {
+              if (!input || !label) return;
+              const computedStyle = getComputedStyle(input);
+              label.style.left = `${input.offsetLeft + parseFloat(computedStyle.paddingInlineStart)}px`;
+            });
+          }, 60);
+        }
+
+        fixOffset();
+        input.addEventListener("focus", fixOffset);
+        window.addEventListener("resize", fixOffset);
+      }
+
+      /**
+       * Hydrate floating labels
+       */
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll("[floating-label]"));
+        for (const element of elements) handleFloatingLabel(element);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- main container section -->
+    <div class="sign-inone">
+      <!-- sign in section -->
+      <div class="signin1">
+        <div class="section-1 container-md">
+          <!-- footer section -->
+          <div class="section__content-1">
+            <div class="section__content__column">
+              <div class="section__content__column__header">
+                <img src="public/images/img_logo_s.png" alt="Logo S" class="section__content__column__header__logo" />
+                <div class="section__content__column__header__signin">
+                  <div class="section__content__column__header__signin__group">
+                    <div class="user-sign-in">
+                      <div class="user-sign-in__group">
+                        <img
+                          src="public/images/img_gg_icone_sing_in.svg"
+                          alt="Gg Icone Sing In"
+                          class="user-sign-in__icon"
+                        />
+                        <a href="#" class="create-an-account-link">
+                          <h1 class="user-sign-in__link ui heading size-heading4xl">Create an account</h1>
+                        </a>
+                      </div>
+                      <p class="user-sign-in__title ui text size-texts">Let’s get started!</p>
+                    </div>
+                    <div class="user-registration-form">
+                      <label
+                        class="user-registration-form__field--user-id ui floatingtextfield blue_gray_500_02 size-xs ftxtoutlinebluegray50002 round"
+                        floating-label="normal"
+                      >
+                        <input
+                          name="Enter your ID"
+                          placeholder="User ID"
+                          label="User ID"
+                          value="Enter your ID"
+                          type="text"
+                          floating-input
+                        />
+                        <div floating-text>User ID</div>
+                      </label>
+                      <label
+                        class="user-registration-form__field--password ui floatingtextfield blue_gray_500_02 size-xs ftxtoutlinebluegray50002 round"
+                        floating-label="normal"
+                      >
+                        <input
+                          name="Enter your Password"
+                          placeholder="Password"
+                          label="Password"
+                          value="Enter your Password"
+                          type="text"
+                          floating-input
+                        />
+                        <div floating-text>Password</div>
+                        <img
+                          src="public/images/img_iconamooneyeoffthin.svg"
+                          alt="Iconamoon:eye-off-thin"
+                          class="iconamooneye-off-thin"
+                        />
+                      </label>
+                      <label
+                        class="user-registration-form__field--password ui floatingtextfield blue_gray_500_02 size-xs ftxtoutlinebluegray50002 round"
+                        floating-label="normal"
+                      >
+                        <input
+                          name="Enter your Password"
+                          placeholder="confrom Password"
+                          label="confrom Password"
+                          value="Enter your Password"
+                          type="text"
+                          floating-input
+                        />
+                        <div floating-text>confrom Password</div>
+                        <img
+                          src="public/images/img_iconamooneyeoffthin.svg"
+                          alt="Iconamoon:eye-off-thin"
+                          class="iconamooneye-off-thin"
+                        />
+                      </label>
+                      <label
+                        class="user-registration-form__field--user-id ui floatingtextfield blue_gray_500_02 size-xs ftxtoutlinebluegray50002 round"
+                        floating-label="normal"
+                      >
+                        <input
+                          name="Enter your E mail"
+                          placeholder="E-mail"
+                          label="E-mail"
+                          value="Enter your E-mail"
+                          type="text"
+                          floating-input
+                        />
+                        <div floating-text>E-mail</div>
+                      </label>
+                      <button class="user-registration-form__button--signup ui button cyan_900_01 size-xl fill round">
+                        SIGN UP
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="public/images/img_group.svg" alt="Group" class="section__content__column__header__image" />
+            </div>
+            <h2 class="section__content__footer__text ui heading size-headingxs">
+              All rights saved to @intellMed Extractor
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
