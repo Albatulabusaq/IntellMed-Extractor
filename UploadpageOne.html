@@ -29,22 +29,22 @@
                 <div class="menu__row">
                   <ul class="header__nav__menu">
                     <li>
-                      <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                        <p class="header__nav__menu-item ui text size-texts">HOME PAGE</p>
+                      <a href="Home1.html" target="_blank">
+                        <p class="header__nav__menu-item ui text size-texts">Home page</p>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                      <a href="Aboutus.html" target="_blank">
                         <p class="menu__item--about ui text size-texts">About us</p>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                      <a href="LoginOne.html" target="_blank">
                         <p class="menu__item--about ui text size-texts">Login</p>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                      <a href="Signin1n.html" target="_blank">
                         <p class="menu__item--about ui text size-texts">Sign up</p>
                       </a>
                     </li>
@@ -58,7 +58,7 @@
                 <div class="content__images">
                   <div class="user-profile">
                     <h1 class="user-profile__welcome-text ui heading size-heading4xl">Welcome User</h1>
-                    <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                    <a href="Home1.html" target="_blank">
                       <div class="user-profile__details">
                         <img
                           src="public/images/img_hugeicons_co_present.svg"
@@ -69,7 +69,7 @@
                       </div>
                     </a>
                   </div>
-                  <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                  <a href="Technical.html" target="_blank">
                     <img
                       src="public/images/img_group_cyan_400_01.svg"
                       alt="Group"
@@ -86,17 +86,23 @@
                 <!-- input form section -->
                 <div class="footer__form">
                   <div class="form__actions">
-                    <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
+                    <a href="Resultspaget.html" target="_blank">
                       <button class="actions__submit ui button blue_gray_500 size-xl fill round">Send</button>
                     </a>
-                    <div class="actions__upload">
-                      <div class="upload__row">
-                        <h2 class="upload__text ui heading size-heading2xl">Upload your file here</h2>
-                        <img src="public/images/img_thumbs_up.svg" alt="Thumbs Up" class="upload__icon" />
-                      </div>
-                    </div>
-                  </div>
-                  <h3 class="form__note ui heading size-heading2xl">The file should be PDF/DOCX extension!</h3>
+
+                    <form action="your-upload-endpoint" method="POST" enctype="multipart/form-data">
+                      <label for="fileInput" class="upload__button">
+                          <div class="upload__row">
+                              <h1 class="upload__text ui heading size-heading2xl">Upload your file here</h1>
+                              <img src="public/images/img_thumbs_up.svg" alt="Thumbs Up" class="upload__icon" />
+                          </div>
+                      </label>
+                      <input type="file" id="fileInput" name="file" accept=".pdf,.DOCX" onchange="this.form.submit()" />
+                  </form>
+                  
+
+                    
+                  <h2 class="form__note ui heading size-heading2xl">The file should be PDF/DOCX extension!</h2>
                 </div>
               </div>
 
