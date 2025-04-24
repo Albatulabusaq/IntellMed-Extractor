@@ -1,105 +1,190 @@
-<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Sign Up - Create Your User Account Today</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Start your journey with us by creating an account. Easy sign-up process with secure ID and password creation. Join us and explore our services."
-    />
-    <img
-      alt="Logo"
-      src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
-      style="width: 0px; height: 0px; display: none"
-    />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-  </head>
-  <body>
-    <!-- main container section -->
-    <div class="sign-inone">
-      <!-- sign in section -->
-      <div class="signin1-n">
-        <!-- sign in content section -->
-        <div class="section-1 container-md">
-          <!-- footer section -->
-          <div class="section__content-1">
-            <div class="section__content__column">
-              <div class="section__content__column__header">
-                <img src="public/images/img_logo_s.png" alt="Logo S" class="section__logo" />
-                <div class="section__form">
-                  <div class="section__form-group">
-                    <div class="user-sign-in">
-                      <div class="user-sign-in__group">
-                        <img
-                          src="public/images/img_gg_icone_sing_in.svg"
-                          alt="Gg Icone Sing In"
-                          class="user-sign-in__icon"
-                        />
-                        <a href="#" class="create-an-account-link">
-                          <h1 class="user-sign-in__link ui heading size-heading4xl">Create an account</h1>
-                        </a>
-                      </div>
-                      <p class="user-sign-in__title ui text size-texts">Let’s get started!</p>
-                    </div>
-                    <div class="section__form-fields">
-                      <div class="login-section__input-container--password">
-                        <p class="section__label--userid ui text size-texts">User ID</p>
-                        <label class="section__input--userid ui input blue_gray_500_02 size-sm outline round">
-                          <input name="Group 41" placeholder="Enter your ID" type="text" />
-                        </label>
-                      </div>
-                      <div class="section__input-group-1">
-                        <p class="section__label--password ui text size-texts">Password</p>
-                        <label class="section__input--password ui input blue_gray_500_02 size-sm outline round">
-                          <input name="Group 365" placeholder="Enter your Password" type="password" />
-                          <img
-                            src="public/images/img_iconamooneyeoffthin.svg"
-                            alt="Iconamoon:eye-off-thin"
-                            class="iconamooneye-off-thin-2"
-                          />
-                        </label>
-                      </div>
-                      <div class="section__input-group-2">
-                        <div class="section__input-group--confirm">
-                          <div class="login-section__input-container--userid">
-                            <p class="section__label--confirm ui text size-texts">confrom Password</p>
-                            <label class="section__input--password ui input blue_gray_500_02 size-sm outline round">
-                              <input name="Group 330" placeholder="Enter your Password" type="password" />
-                              <img
-                                src="public/images/img_iconamooneyeoffthin.svg"
-                                alt="Iconamoon:eye-off-thin"
-                                class="iconamooneye-off-thin-2"
-                              />
-                            </label>
-                          </div>
-                        </div>
-                        <h2 class="section__error-message ui heading size-textxs">
-                          Conform dosen’t match the password!
-                        </h2>
-                      </div>
-                      <div class="section__input-group-3">
-                        <div class="login-section__input-container--userid">
-                          <p class="section__label--email ui text size-texts">E-mail</p>
-                          <label class="section__input--userid ui input blue_gray_500_02 size-sm outline round">
-                            <input name="Group 41" placeholder="Enter your E-mail" type="email" />
-                          </label>
-                        </div>
-                      </div>
-                      <button class="section__button--signup ui button cyan_900_01 size-xl fill round">SIGN UP</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <img src="public/images/img_group_cyan_400_01.svg" alt="Group" class="section__image" />
-            </div>
-            <h3 class="section__content__footer__text ui heading size-headingxs">
-              All rights saved to @intellMed Extractor
-            </h3>
-          </div>
-        </div>
-      </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Create Account Form
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #d9f3fc;
+      background-image: url('C:/Users/btool/Downloads/img_group_19.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+   .eye-button {
+     position: absolute;
+     right: 0.75rem;
+     top: 50%;
+     transform: translateY(-50%);
+     background: transparent;
+     border: none;
+     padding: 0;
+     cursor: pointer;
+     width: 24px;
+     height: 24px;
+     color: #3a5f7f;
+     font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   h1.custom-title {
+     font-size: 1.5rem;
+     font-weight: 800;
+     text-align: center;
+     white-space: nowrap;
+     margin: 0;
+   }
+  </style>
+ </head>
+ <body class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Top left logo replaced with image link -->
+  <div class="absolute top-8 left-8 z-20">
+   <a href="C:\Users\btool\Downloads\grad_s_application13\Home1.html">
+    <img alt="Logo image" class="w-32 h-auto cursor-pointer" src="C:\Users\btool\Downloads\img_header_logo.png"/>
+   </a>
+  </div>
+  <!-- Top right chat icon as button linking to Technical.html -->
+  <div class="absolute top-8 right-8 z-20">
+   <a href="Technical.html" tabindex="0">
+    <img alt="Chat Icon" class="w-10 h-10 cursor-pointer" src="C:\Users\btool\Downloads\Capture2 (1).png"/>
+   </a>
+  </div>
+  <!-- Form container -->
+  <form autocomplete="off" id="signupForm" class="bg-white rounded-3xl shadow-[0_0_20px_#c7e6f3] p-8 w-[320px] sm:w-[400px] flex flex-col items-center space-y-6" novalidate>
+   <div class="text-[#1f4e72] text-4xl font-extrabold flex flex-col items-center space-y-2">
+    <i class="fa-solid fa-circle-user text-[#1f4e72]" style="font-size: 40px;"></i>
+    <h1 class="custom-title">
+     Create an account
+    </h1>
+    <p class="text-sm font-normal text-[#1f4e72]">
+     Let’s get started!
+    </p>
+   </div>
+   <div class="w-full space-y-4">
+    <div>
+     <input aria-label="First name" class="w-full border border-[#3a5f7f] rounded-md px-3 py-2 shadow-[2px_2px_2px_#acc9e9] text-[#3a5f7f] placeholder-[#3a5f7f] focus:outline-none focus:ring-2 focus:ring-[#3a5f7f]" id="firstName" placeholder="First name" type="text" required/>
     </div>
-  </body>
+    <div>
+     <input aria-label="User ID" class="w-full border border-[#3a5f7f] rounded-md px-3 py-2 shadow-[2px_2px_2px_#acc9e9] text-[#3a5f7f] placeholder-[#3a5f7f] focus:outline-none focus:ring-2 focus:ring-[#3a5f7f]" id="userId" placeholder="User ID" type="text" required/>
+    </div>
+    <div class="relative">
+     <input aria-label="Password" class="w-full border border-[#3a5f7f] rounded-md px-3 py-2 shadow-[2px_2px_2px_#acc9e9] text-[#3a5f7f] placeholder-[#3a5f7f] focus:outline-none focus:ring-2 focus:ring-[#3a5f7f]" id="password" placeholder="Password" type="password" required/>
+     <button aria-label="Toggle password visibility" class="eye-button" type="button" id="togglePassword" tabindex="-1">&#xf06e;</button>
+    </div>
+    <div class="relative">
+     <input aria-label="Conform password" class="w-full border border-[#3a5f7f] rounded-md px-3 py-2 shadow-[2px_2px_2px_#acc9e9] text-[#3a5f7f] placeholder-[#3a5f7f] focus:outline-none focus:ring-2 focus:ring-[#3a5f7f]" id="confirmPassword" placeholder="Conform password" type="password" required/>
+     <button aria-label="Toggle confirm password visibility" class="eye-button" type="button" id="toggleConfirmPassword" tabindex="-1">&#xf06e;</button>
+     <p class="text-red-600 text-sm mt-1 hidden" id="passwordMismatchMsg">Confirm doesn't match the password!</p>
+    </div>
+    <div>
+     <input aria-label="E-mail" class="w-full border border-[#3a5f7f] rounded-md px-3 py-2 shadow-[2px_2px_2px_#acc9e9] text-[#3a5f7f] placeholder-[#3a5f7f] focus:outline-none focus:ring-2 focus:ring-[#3a5f7f]" id="email" placeholder="E-mail" type="email" required/>
+     <p class="text-red-600 text-sm mt-1 hidden" id="emailInvalidMsg">Email doesn't contain @</p>
+    </div>
+   </div>
+   <button class="bg-[#1f4e72] text-white font-extrabold text-lg rounded-full px-14 py-3 mt-2 hover:bg-[#163d5a] transition-colors disabled:opacity-50" id="submitBtn" type="submit" disabled>
+    SIGN UP
+   </button>
+  </form>
+  <script>
+    const form = document.getElementById('signupForm');
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirmPassword');
+    const passwordMismatchMsg = document.getElementById('passwordMismatchMsg');
+    const email = document.getElementById('email');
+    const emailInvalidMsg = document.getElementById('emailInvalidMsg');
+    const submitBtn = document.getElementById('submitBtn');
+
+    const togglePasswordBtn = document.getElementById('togglePassword');
+    const toggleConfirmPasswordBtn = document.getElementById('toggleConfirmPassword');
+
+    function validatePasswords() {
+      if (confirmPassword.value === '') {
+        passwordMismatchMsg.classList.add('hidden');
+        confirmPassword.setCustomValidity('');
+        return;
+      }
+      if (password.value !== confirmPassword.value) {
+        passwordMismatchMsg.classList.remove('hidden');
+        confirmPassword.setCustomValidity("Passwords don't match");
+      } else {
+        passwordMismatchMsg.classList.add('hidden');
+        confirmPassword.setCustomValidity('');
+      }
+    }
+
+    function validateEmail() {
+      if (email.value === '') {
+        emailInvalidMsg.classList.add('hidden');
+        email.setCustomValidity('');
+        return;
+      }
+      if (!email.value.includes('@')) {
+        emailInvalidMsg.classList.remove('hidden');
+        email.setCustomValidity("Email must contain '@'");
+      } else {
+        emailInvalidMsg.classList.add('hidden');
+        email.setCustomValidity('');
+      }
+    }
+
+    function checkFormValidity() {
+      validatePasswords();
+      validateEmail();
+      submitBtn.disabled = !form.checkValidity();
+    }
+
+    confirmPassword.addEventListener('input', () => {
+      validatePasswords();
+      checkFormValidity();
+    });
+    password.addEventListener('input', () => {
+      validatePasswords();
+      checkFormValidity();
+    });
+    email.addEventListener('input', () => {
+      validateEmail();
+      checkFormValidity();
+    });
+    form.addEventListener('input', checkFormValidity);
+
+    form.addEventListener('submit', function(e) {
+      validatePasswords();
+      validateEmail();
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+      }
+    });
+
+    togglePasswordBtn.addEventListener('click', () => {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      togglePasswordBtn.innerHTML = type === 'text' ? '&#xf070;' : '&#xf06e;';
+    });
+
+    toggleConfirmPasswordBtn.addEventListener('click', () => {
+      const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+      confirmPassword.setAttribute('type', type);
+      toggleConfirmPasswordBtn.innerHTML = type === 'text' ? '&#xf070;' : '&#xf06e;';
+    });
+
+    // Initialize icons
+    togglePasswordBtn.innerHTML = '&#xf06e;';
+    toggleConfirmPasswordBtn.innerHTML = '&#xf06e;';
+
+    // Initial check to disable submit if form empty
+    checkFormValidity();
+  </script>
+ </body>
 </html>
