@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About Us - Our Vision & Mission | intellMed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Meet the intellMed team, passionate innovators integrating AI and NLP technologies to transform and accelerate healthcare research through Science Summarizer." />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
+</head>
+
+<body>
+  <!-- Main Content -->
+  <div class="about-us">
+    <!-- Header Section -->
+    <div class="section">
+      <div class="section__content container-md">
+
+        <!-- Top Row: Logo + Navigation -->
+        <div class="section__content-row">
+          <div class="section__column--left">
+            <header class="header-2">
+              <div class="header__top-row">
+                <div class="header__top-row__group">
+                  <a href="{{ url_for('home_page') }}">
+                    <img src="{{ url_for('static', filename='images/images/img_header_logo.png') }}" alt="Header Logo" class="header__logo" />
+                  </a>
+
+                  <div class="header__nav">
+                    <div class="header__nav__item">
+                      <ul class="header__nav__menu">
+                        <li><a href="{{ url_for('home_page') }}"><p class="header__nav__menu-item ui text size-texts">Home Page</p></a></li>
+                        <li><a href="{{ url_for('aboutus_page') }}"><p class="ui text size-texts">About Us</p></a></li>
+                        <li><a href="{{ url_for('login_page') }}"><p class="ui text size-texts">Login</p></a></li>
+                        <li><a href="{{ url_for('signin_page') }}"><p class="ui text size-texts">Sign Up</p></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href= "mailto:IntellMedExtractor@outlook.com" >
+                <img src="{{ url_for('static', filename='images/images/img_group.svg') }}" alt="Send Email">
+              </a>
+            </header>
+
+            <!-- About Us Heading -->
+            <h1 class="section__title ui heading size-heading6xl">About Us</h1>
+          </div>
+
+          <!-- Main Right Column Content -->
+          <div class="section__column--right">
+            <div class="section__list">
+
+              <!-- Who Are We Section -->
+              <div class="about-us-section container-sm">
+                <div class="about-us-section__column">
+                  <h2 class="section__title ui heading size-heading5xl">Who Are We?</h2>
+                  <h3 class="about-us-section__description ui heading size-textxl">
+                    We are a passionate team of students committed to building<br />
+                    innovative AI and NLP-powered solutions to revolutionize healthcare research.
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Vision Section -->
+              <div class="about-us-section container-sm">
+                <div class="about-us-section__column">
+                  <h4 class="section__title ui heading size-heading5xl">Our Vision</h4>
+                  <h5 class="about-us-section__description ui heading size-textxl">
+                    To accelerate the analysis of medical research and reduce the time<br />
+                    needed for healthcare professionals to access critical evidence-based insights,<br />
+                    ultimately improving the quality of care and decision-making.
+                  </h5>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <h6 class="ui heading size-headingxs">All rights reserved to @intellMed Extractor</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

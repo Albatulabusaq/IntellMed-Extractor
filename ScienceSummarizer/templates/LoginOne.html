@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Login - Access Your Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Log in to your account using your user ID and password." />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
+</head>
+
+<body>
+  <div class="log-in-one">
+    <div>
+      <!-- Navigation bar -->
+      <div class="group-505">
+        <div class="login-one__group container-md">
+          <a href="{{ url_for('home_page') }}">
+            <img src="{{ url_for('static', filename='images/images/img_header_logo.png') }}" alt="Header Logo" class="header__logo" />
+          </a>
+          <a href= "mailto:IntellMedExtractor@outlook.com" >
+            <img src="{{ url_for('static', filename='images/images/img_group.svg') }}" alt="Send Email">
+          </a>
+        </div>
+      </div>
+
+      <div class="login-section">
+        <!-- Start the form -->
+        <form action="/login" method="POST" class="login-form">
+        
+          <!-- login form section -->
+          <div class="login-section__content">
+            <div class="section-1 container-md">
+              <div class="login-section__form-container">
+                <div class="login-section__image-container">
+                  <img
+                    src="{{ url_for('static', filename='images/images/img_fontisto_doctor_teal_900.svg') }}"
+                    alt="Fontisto Doctor"
+                    class="login-section__image"
+                  />
+                  <h1 class="content__welcome-text ui heading size-heading4xl">Log in to your account!</h1>
+                </div>
+      
+                <div class="login-section__input-group--userid" style="margin-bottom: 20px;">
+                  <div class="login-section__input-container--userid">
+                    <label for="user_id" class="login-section__label--userid ui text size-texts">UserID</label>
+                    <input type="text" name="user_id" id="user_id" style="position: relative; z-index: 2;" required />
+                    <div class="login-section__input--userid"></div>
+                  </div>
+                </div>
+                <div class="login-section__input-group--password">
+                  <div class="login-section__input-container--password">
+                    <p class="login-section__label--password ui text size-texts">Password</p>
+                    <label class="login-section__input--password ui input white_a700_bc size-lg fill">
+                      <input type="password" name="password" id="password" required />
+                    </label>
+                  </div>
+                  <a href="SigninOne.html">
+                  <h2 class="login-section__forgot-password ui heading size-headingxs">Forget your password?</h2>
+                </a>
+                </div>
+                <div class="login-section__submit-container">
+                    <button type="submit" class="login-section__submit-button">
+                      <h3 class="login-section__submit-text ui heading size-heading3xl">Login</h3>
+                    </button>                 
+                  
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      
+        </form>
+        <!-- End of form -->
+      </div>
+      
+    </div>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // تحقق من اسم المستخدم وكلمة المرور
+        if (username === 'admin' && password === 'admin123') {
+            window.location.href = 'Admin page.html'; // استبدل 'your-page.html' برابط الصفحة المطلوبة
+        } else {
+            alert('uncorect login data');
+        }
+    });
+</script>
+
+</body>
+</html>
